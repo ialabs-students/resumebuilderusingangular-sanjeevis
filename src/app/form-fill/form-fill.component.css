@@ -1,0 +1,153 @@
+#resume_builder_parent{
+            
+    border: none solid black;
+    margin-bottom: 10px;
+    background-color: cornsilk;   
+}
+input[type=text], select {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 4px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 4px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+  }
+  input[type=number], select {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 4px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  input[type=Date], select {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 4px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  #resume_builder_header{
+    font-weight: 100;
+    font-size: larger;
+    text-align: center;
+  }
+  h4{
+    font-weight: 100;
+    font-style: initial;
+    font-size: larger;
+  }
+  h2{
+    font-weight: 100;
+    font-style: initial;
+    font-size: larger;
+    font-size: x-large;
+  } 
+  td{
+    
+    font-style: initial;
+    
+  }
+  th{
+    font-weight: 100;
+    font-style: initial;
+    font-size: larger;
+  }
+  
+  #resume_builder_sample{
+    border: none black;
+    margin-top: 10px;
+    background-color: blanchedalmond;
+    margin-left: 10px;
+    margin-right:10px;
+    padding-bottom: 20px;
+  }
+  .table_container{
+    border: none black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: blanchedalmond;
+    margin-left: 10px;
+    margin-right:10px;
+    
+  }
+  .basic_contianer{
+    border: none black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: blanchedalmond;
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  .eductional_container{
+    border: none solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: blanchedalmond;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .skill_container{
+    border: none solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: blanchedalmond;
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  .decription{
+    border: none solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: blanchedalmond;
+    margin-left: 10px;
+    margin-right:10px;
+    padding-left: 10px;
+  }
+  .decription_detail{
+    border: none solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: blanchedalmond;
+    margin-left: 10px;
+    margin-right:10px;
+    padding-left: 10px;
+  }
+  .resetbtn{
+    background-color: burlywood;
+    border:none;
+    padding:10px;
+    margin-left: 500px;
+    margin: 50px;
+    
+  }
+  .submitbtn{
+    background-color: burlywood;
+    border:none;
+    padding:10px;
+    margin-left: 200px;
+  }
+
+  .testarea{
+    height:100px;
+    width: 90%;
+    margin-left: 10px;
+
+  }
+  label{
+    font-weight: 100;
+  }

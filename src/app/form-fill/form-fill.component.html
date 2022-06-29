@@ -1,0 +1,161 @@
+<div  *ngIf="!showResume" id="resume_builder_parent">
+    <div id="resume_builder_header">
+ 
+            <h2>Your Resume Builder</h2>
+            <h2>Build you resume here!</h2>
+    </div>   
+    <div id="resume_builder_form">
+        <form id ="regForm" (submit)="saveFormData()">
+            <h2>Enter Basic Informations</h2>
+               <br>
+            <div class="basic_contianer">
+            <table width="1000">
+                <tr>
+                    <td> <label> Enter First Name: </label> </td>
+                    <td> <input type="text" name="fname" id="firstName"placeholder="Enter First Name" [(ngModel)] = "formData.firstName"> </td>
+                    <td> <label> Enter Last Name: </label> </td>
+                    <td> <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" [(ngModel)] = "formData.lastName"> </td>
+                </tr>
+                <tr>
+                    <td> <label> Enter Email Id: </label> </td>
+                    <td> <input type="email" name="email" placeholder="Enter Email Id"  [(ngModel)] = "formData.emailId"> </td>
+                    <td> <label> Enter Mobile Number: </label> </td>
+                    <td> <input type="number" name="mobile" placeholder="Enter Mobile Number" [(ngModel)] = "formData.mobileNo"> </td>
+                </tr>
+                <tr>
+                    <td> <label> Enter Date of Birth: </label> </td>
+                    <td> <input type="date" name="dob" [(ngModel)] = "formData.dob"> </td>
+                    <td> <label> Enter Gender: </label> </td>
+                    <td> <select name="gender">
+                            <option value="">-select-</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="O">Other</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+       <br>
+            <h2>Enter Educational Qualification</h2>
+            <br>
+            <div class="eductional_container">
+            <table width="1000">
+                <thead>
+                    <tr>
+                        <th> Education </th>
+                        <th> School/University</th>
+                        <th> Year of Passing </th>
+                        <th> Percentage/CGPA </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> <label> Post Graduation </label> </td>
+                    <td> <input type="text" name="university1" placeholder="Enter School/University" [(ngModel)] = "formData.uni1"> </td>
+                    <td> <input type="number" name="yearofpassing1" placeholder="Enter Year of Passing" [(ngModel)] = "formData.yop1"> </td>
+                    <td> <input type="number" name="percentage1" placeholder="Enter Percentage/CGPA" [(ngModel)] = "formData.perct1"> </td>
+                </tr>
+                <tr>
+                    <td> <label> Graduation: </label> </td>
+                    <td> <input type="text" name="university2" placeholder="Enter School/University" [(ngModel)] = "formData.uni2"> </td>
+                    <td> <input type="number" name="yearofpassing2" placeholder="Enter Year of Passing" [(ngModel)] = "formData.yop2"> </td>
+                    <td> <input type="number" name="percentage2" placeholder="Enter Percentage/CGPA" [(ngModel)] = "formData.perct2"> </td>
+                </tr>
+                <tr>
+                    <td> <label> High School </label> </td>
+                    <td> <input type="text" name="university4" placeholder="Enter School/University"[(ngModel)] = "formData.uni4"> </td>
+                    <td> <input type="number" name="yearofpassing4" placeholder="Enter Year of Passing"[(ngModel)] = "formData.yop4"> </td>
+                    <td> <input type="number" name="percentage4" placeholder="Enter Percentage/CGPA"[(ngModel)] = "formData.perct4"> </td>
+                </tr>
+                
+            </table>
+        </div>
+        <br>
+            <h2>Enter Experience:</h2>
+            <br>
+            <div class="table_container">
+            <table width="1000">
+                <thead>
+                    <tr>
+                        <th> Organization </th>
+                        <th> Joining Date</th>
+                        <th> Releaving Date </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> <input type="text" name="organization1" placeholder="Enter Organization"[(ngModel)] = "formData.org1"> </td>
+                    <td> <input type="date" name="doj1" placeholder="Enter Joining Date"[(ngModel)] = "formData.doj1"> </td>
+                    <td> <input type="date" name="dor1" placeholder="Enter Releaving Date"[(ngModel)] = "formData.dor1"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="organization2" placeholder="Enter Organization"[(ngModel)] = "formData.org2"> </td>
+                    <td> <input type="date" name="doj2" placeholder="Enter Joining Date"[(ngModel)] = "formData.doj2"> </td>
+                    <td> <input type="date" name="dor2" placeholder="Enter Releaving Date"[(ngModel)] = "formData.dor2"> </td>
+                </tr>
+                
+            </table>
+        </div>
+        <br>
+            <h2>Enter Skills:</h2>
+            <br>
+            <div class="skill_container">
+            <table width="1000">
+                <thead>
+                    <tr>
+                        <th> Technology </th>
+                        <th> Version Worked On</th>
+                        <th> Last Worked On </th>
+                        <th> Ratting </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> <input type="text" name="tech1" placeholder="Enter Technology" [(ngModel)] = "formData.tech1"> </td>
+                    <td> <input type="text" name="version1" placeholder="Enter Version Worked On" [(ngModel)] = "formData.ver1"> </td>
+                    <td> <select name="lastworkedon1" [(ngModel)] = "formData.lastworkdone1">
+                            <option value="0">-select- </option>
+                            <option value="1">Last Month </option>
+                            <option value="2">Within 6 months </option>
+                            <option value="3">Before 6 Months </option>
+                        </select>
+                    </td>
+                    <td> <input type="number" max="10" name="rate1" placeholder="Rate yourself out of 10" [(ngModel)] = "formData.rate1"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="tech2" placeholder="Enter Technology" [(ngModel)] = "formData.tech2">  </td>
+                    <td> <input type="text" name="version2" placeholder="Enter Version Worked On" [(ngModel)] = "formData.ver2"> </td>
+                    <td> <select name="lastworkedon2" [(ngModel)] = "formData.lastworkdone2">
+                            <option value="0">-select- </option>
+                            <option value="1">Last Month </option>
+                            <option value="2">Within 6 months </option>
+                            <option value="3">Before 6 Months </option>
+                        </select>
+                    </td>
+                    <td> <input type="number" max="10" name="rate2" placeholder="Rate yourself out of 10" [(ngModel)] = "formData.rate2"> </td>
+                </tr>
+                
+            </table>
+        </div>
+        <br>
+            <h2>Describe Yourself:</h2>
+            <br>
+            <textarea name="description"  class="testarea"  id="testarea1" placeholder="Enter you wishdom"[(ngModel)] = "formData.textarea1"></textarea>
+            <br>
+            <h2>Declaration:</h2>
+            <br>
+            <textarea name="description1"  class="testarea" id="testarea2" placeholder="Enter you wishdom"[(ngModel)] = "formData.textarea2"></textarea>
+        
+            <!-- <div class="Uploadphoto">
+
+                <label for="myfile"><h2>Upload Your Photo</h2></label>
+                <input type="file" id="myfile" name="myfile">
+            </div> -->
+
+        
+                <button type="reset"  class="resetbtn">Reset</button>                 
+                <button type="submit"  class="submitbtn">Submit</button>
+              
+        </form>   
+    </div>
+</div>
+<app-resume *ngIf="showResume"></app-resume>

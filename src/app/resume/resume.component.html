@@ -1,0 +1,135 @@
+    <form id="htmlContent">
+    <header class="bg-info  text-black py-5 " >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 text-left text-md-center mb-3">
+              <img class="rounded-circle img-fluid"  src="/assets/Image/default-logo.png" alt="Profile Photo" />
+            </div>
+            <div class="col-md-8">
+                <div class="firstnamebox">
+                  <!-- <input type="text" name="firstName" id="firstName,lastName" disabled> -->
+                  <h1>{{formData.firstName}} {{formData.lastName}}</h1>
+            </div>
+              <h2>Web Developer</h2>
+              <p class="border-top pt-3 ">Seek to work in an environment that will challenge me further,
+                while allowing me to contribute to the continued growth and success of the organization. Passionate childcare professional with over a year of babysitting experience. Skilled at creating engaging, educational activities for children and fostering a safe, caring environment.</p>
+            </div>       
+          </div>        
+        </div>
+      </header>
+      <nav class="bg-success text-black-50 mb-5 bg-opacity-10">
+        <div class="container">
+         <div class="row p-3">
+           <div class="col-md pb-2 pb-md-0">
+              <svg width="1em" height="1.8em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+              </svg>
+                <h6>{{formData.emailId}}</h6>
+              </div>
+              <br>
+              <br>
+              <div class="col-md text-md-right">
+                <svg  width="1em" height="1.5em"  xmlns="http://www.w3.org/2000/svg" class="fa fa-calender"  fill="currentColor"viewBox="0 0 448 512"><path d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z"/></svg>
+                <br>
+                <h6>{{formData.dob}}</h6>
+              </div>
+           </div>
+           <!-- <div class="col-md text-md-center pb-2 pb-md-0">
+              <a href="#" class="text-white ml-2"></a>
+            </div>        -->
+            <div class="col-md text-md-left">
+              <svg width="1em" height="1.5em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+              </svg>
+              <div class="mobileno mb-2">
+                <h6>{{formData.mobileNo}}</h6>
+            </div>
+            </div>       
+          </div>
+       
+      </nav>
+      <main class="container">
+        <div class="row bg-success text-black-50 mb-5 bg-opacity-10">
+          <div class="col-md mb-6">
+            <h2 class="mb-5">Work Experience</h2>
+            <ul>
+             
+                <h5>Company Name:</h5>  <p>{{formData.org1}}</p>
+                <h5>Years of Experience:</h5> <p>{{formData.doj1}}</p>
+                <h5>Releaving Date: </h5> <p>{{formData.dor1}}</p>
+             
+              <br>
+                <h5>Company Name:</h5><p>{{formData.org2}}</p>
+                <h5>Years of Experience:</h5> <p>{{formData.doj2}}</p>
+                <h5>Releaving Date:</h5> <p>{{formData.dor2}}</p>
+                  
+            </ul>    
+          </div>
+          <div class="col-md mb-6">
+          <h2>Skills</h2> 
+                    <br>
+                    <br>
+                    <ul>
+                    <h5> Technology:</h5><p>{{formData.tech1}}</p>
+                    <h5> Version Worked On:</h5><p>{{formData.ver1}}</p>
+                    <h5> Last Worked On :</h5><p>{{formData.lastworkdone1}}</p>
+                    <h5> Ratting :</h5><p>{{formData.rate1}}</p>
+                  <br>
+                  <h5> Technology:</h5><p>{{formData.tech2}}</p>
+                  <h5> Version Worked On: </h5><p>{{formData.ver2}}</p>
+                  <h5> Last Worked On :</h5><p>{{formData.lastworkdone2}}</p>
+                  <h5> Ratting :</h5><p>{{formData.rate2}}</p>
+                </ul>
+            </div>      
+          <div class="col-md mb-6">
+            <h2 class="mb-5">Education</h2> 
+            <ul>
+              
+                <h3>Post Graduation</h3>
+                <br>
+                <h5>School/University:</h5><p>{{formData.uni1}}</p>
+                <h5>Year of Passing:</h5><p>{{formData.yop1}}</p>
+                <h5>Percentage/CGPA:</h5><p>{{formData.perct1}}</p>
+              
+              <br>
+                <h3>Graduation</h3>
+                <br>
+                <h5>School/University:</h5><p>{{formData.uni2}}</p>
+                <h5>Year of Passing:</h5><p>{{formData.yop2}}</p>
+                <h5>Percentage/CGPA:</h5><p>{{formData.perct2}}</p>
+              
+              <br>
+                <h3>High School</h3>
+                <br>
+                <h5>School/University:</h5><p>{{formData.uni4}}</p>
+                <h5>Year of Passing:</h5><p>{{formData.yop4}}</p>
+                <h5>Percentage/CGPA:</h5><p>{{formData.perct4}}</p>
+              
+            </ul>
+            
+          </div>     
+          
+        
+        <div class="row  mt-4">
+            <h2 class="5">Brief About Myself</h2>
+            <div class="row">
+              <p>{{formData.textarea1}}</p>
+            </div>
+            <br>
+           
+              <h2 class="5">Declaration</h2>
+              <div class="row">
+                {{formData.textarea2}}
+              </div>
+             
+          </div>
+        </div>
+      
+    
+    <!-- <div id="editor"></div> -->
+   
+      <footer class="bg-dark text-white-50 text-center mt-5 p-3">
+        &copy; 2022 Sanjeevi Sekar Resume Builder - <a href="" class="text-white-50"></a> | <a href="https://www.linkedin.com/in/sanjeevi-s-69542b203/" class="text-white-50">LinkedIn</a> | <a href="#" class="text-white-50">Twitter</a>
+      </footer> 
+     
+   

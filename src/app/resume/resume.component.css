@@ -1,0 +1,38 @@
+input[type=text]{
+    border: none;
+    font-weight: bold;
+    
+   
+  }
+  input[type=number]{
+    border: none ;
+    font-weight: bold;
+    
+  }
+  .img-fluid{
+    width: 100%;
+  }
+  .row>{
+    margin-bottom: 100px;
+  }
+  p{
+    font-size: large;
+  }
+  #description{
+    height:120px;
+    width: 90%;
+    border: none;
+  }
+  #description1{
+    height:120px;
+    width: 90%;
+    border: none;
+  }
+  .firstnamebox{
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+  }
+  .text-white{
+    font-weight: 100;
+  }
